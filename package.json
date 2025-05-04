@@ -1,0 +1,13 @@
+{
+  "name": "pokemon-backend",
+  "version": "1.0.0",
+  "description": "Backend server for Pokemon Battle application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "json-server --watch db.json --port 3004"
+  },
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+} 
