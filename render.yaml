@@ -2,8 +2,13 @@ services:
   - type: web
     name: pokemon-backend
     env: node
-    buildCommand: npm install
+    buildCommand: |
+      npm install
+      npm install json-server
     startCommand: npm start
     envVars:
       - key: PORT
-        value: 3004 
+        value: 3004
+      - key: NODE_ENV
+        value: production
+    healthCheckPath: /health 
